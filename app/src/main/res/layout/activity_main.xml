@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <TextView
+        android:id="@+id/txtstatic"
+        android:layout_width="243dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Welcome to Employee App"
+        android:textSize="36sp" />
+
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtstatic"
+        android:layout_centerInParent="false"
+        android:layout_marginLeft="54dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundeduser1"
+        android:hint="Username"
+        android:paddingStart="8dp" />
+
+    <TextView
+        android:id="@+id/postfix"
+        android:layout_width="121dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/txtstatic"
+        android:layout_alignTop="@+id/txtusername"
+        android:layout_marginEnd="-20dp"
+        android:background="@drawable/roundeduser2"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="8sp"
+        android:text="@netapp.com"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/txtpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtstatic"
+        app:layout_constraintVertical_bias="0.354" />
+
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="54dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/roundedpass"
+        android:hint="Password"
+        android:paddingStart="8dp" />
+
+    <Button
+        android:id="@+id/btnforgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/txtpassword"
+        android:layout_marginRight="50dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text="Forgot Password"
+        android:textAllCaps="false"
+        android:textColor="#0072d9"
+        android:textSize="17dp" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnforgot"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="54dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedsignin"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnAwSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSignIn"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="54dp"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/roundedaw"
+        android:text="Access without sign in"
+        android:textAllCaps="false"
+        android:textColor="#0072d9"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAwSignIn"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="You may get limited access."
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
